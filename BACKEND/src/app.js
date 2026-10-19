@@ -3,6 +3,8 @@ const authRoutes= require ('./routes/auth.route')
 
 const eventRoutes=require("./routes/event.route")
 
+const registrationRoutes = require("./routes/registration.route");
+
 
 
 
@@ -20,6 +22,8 @@ app.use(express.json());
 app.use("/api/auth/",authRoutes);
 
 app.use("/api/event/",eventRoutes)
+
+app.use("/api/register",registrationRoutes)
 
 
 
